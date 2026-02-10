@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>Scuola Viva – Scienze</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    :root{
+      --verde:#4CAF50;
+      --azzurro:#00bcd4;
+      --giallo:#ffeb3b;
+      --ombra:0 10px 30px rgba(0,0,0,0.15);
+    }
+    body{
+      margin:0;
+      font-family:'Segoe UI', Tahoma, sans-serif;
+      background:linear-gradient(180deg,#f0f9ff,#ffffff);
+      color:#333;
+    }
+    header{
+      background:linear-gradient(135deg,var(--verde),var(--azzurro));
+      color:white;
+      padding:60px 20px;
+      text-align:center;
+      box-shadow:var(--ombra);
+    }
+    header h1{
+      font-size:3rem;
+      margin:0;
+    }
+    header p{
+      font-size:1.2rem;
+      opacity:0.95;
+    }
+    section{
+      max-width:1100px;
+      margin:60px auto;
+      padding:40px;
+      background:white;
+      border-radius:24px;
+      box-shadow:var(--ombra);
+    }
+    section h2{
+      color:var(--verde);
+      font-size:2.2rem;
+      margin-top:0;
+    }
+    .card-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:30px;
+      margin-top:30px;
+    }
+    .card{
+      background:linear-gradient(180deg,#ffffff,#f7f7f7);
+      border-radius:20px;
+      padding:25px;
+      box-shadow:0 8px 20px rgba(0,0,0,0.12);
+      transition:transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover{
+      transform:translateY(-6px);
+      box-shadow:0 14px 30px rgba(0,0,0,0.18);
+    }
+    .card h3{
+      margin-top:0;
+      color:var(--azzurro);
+    }
+    .img-placeholder{
+      height:160px;
+      border-radius:16px;
+      background:linear-gradient(135deg,#e0f7fa,#c8e6c9);
+      margin-bottom:15px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:bold;
+      color:#555;
+    }
+    footer{
+      text-align:center;
+      padding:40px 20px;
+      background:#222;
+      color:white;
+      margin-top:80px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Scuola Viva</h1>
+  <p>Scienze per la scuola primaria – by Giuseppe Codella</p>
+</header>
+
+<section>
+  <h2>Il corpo umano</h2>
+  <p>Il corpo umano è un insieme straordinario di apparati e sistemi che lavorano tutti insieme per permetterci di vivere, crescere, muoverci, pensare e stare bene. Ogni apparato ha una funzione precisa ed è formato da organi che collaborano tra loro.</p>
+  <div class="card-grid">
+
+    <div class="card">
+      <img src="img/apparato-locomotore.png" alt="Apparato locomotore" class="img" />
+      <h3>Apparato locomotore</h3>
+      <p>L’apparato locomotore ci permette di muoverci e di mantenere la posizione del corpo. È formato da ossa, muscoli e articolazioni. Le ossa formano lo scheletro e sostengono il corpo, i muscoli si contraggono e permettono il movimento, mentre le articolazioni collegano le ossa tra loro. Senza questo apparato non potremmo camminare, correre o saltare.</p>
+    </div>
+
+    <div class="card">
+      <img src="img/apparato-respiratorio.png" alt="Apparato respiratorio" class="img" />
+      <h3>Apparato respiratorio</h3>
+      <p>L’apparato respiratorio serve per respirare. Quando inspiriamo, l’aria entra dal naso o dalla bocca, passa nella trachea e arriva ai polmoni. Qui l’ossigeno entra nel sangue e viene trasportato in tutto il corpo. Quando espiriamo, eliminiamo l’anidride carbonica, una sostanza di scarto.</p>
+    </div>
+
+    <div class="card">
+      <img src="img/apparato-circolatorio.png" alt="Apparato circolatorio" class="img" />
+      <h3>Apparato circolatorio</h3>
+      <p>L’apparato circolatorio ha il compito di trasportare il sangue in tutto il corpo. È formato dal cuore, dal sangue e dai vasi sanguigni. Il cuore funziona come una pompa e fa circolare il sangue, che porta ossigeno e nutrimento alle cellule e raccoglie le sostanze di scarto.</p>
+    </div>
+
+    <div class="card">
+      <img src="img/apparato-digerente.png" alt="Apparato digerente" class="img" />
+      <h3>Apparato digerente</h3>
+      <p>L’apparato digerente serve per trasformare il cibo in sostanze utili per il corpo. Il processo inizia nella bocca, continua nello stomaco e nell’intestino. Le sostanze nutritive vengono assorbite e usate per crescere, avere energia e mantenere il corpo in salute.</p>
+    </div>
+
+    <div class="card">
+      <img src="img/apparato-escretore.png" alt="Apparato escretore" class="img" />
+      <h3>Apparato escretore</h3>
+      <p>L’apparato escretore ha il compito di eliminare le sostanze di scarto dal corpo. I reni filtrano il sangue e producono l’urina, che viene espulsa. Questo apparato è molto importante perché mantiene il corpo pulito e in equilibrio.</p>
+    </div>
+
+    <div class="card">
+      <img src="img/apparato-riproduttore.png" alt="Apparato riproduttore" class="img" />
+      <h3>Apparato riproduttore</h3>
+      <p>L’apparato riproduttore permette la nascita di nuovi esseri umani. È diverso nei maschi e nelle femmine. Questo apparato entra in funzione soprattutto durante la crescita ed è fondamentale per la continuazione della specie umana.</p>
+    </div>
+
+    <div class="card">
+      <img src="img/sistema-nervoso.png" alt="Sistema nervoso" class="img" />
+      <h3>Sistema nervoso</h3>
+      <p>Il sistema nervoso controlla e coordina tutte le attività del corpo. È formato dal cervello, dal midollo spinale e dai nervi. Grazie a questo sistema possiamo pensare, ricordare, muoverci e reagire agli stimoli.</p>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>L’universo</h2>
+  <p>L’universo è tutto ciò che esiste: stelle, pianeti, galassie, spazio e tempo. È immenso e in continua evoluzione. Studiare l’universo aiuta a capire da dove veniamo e come funziona il nostro pianeta.</p>
+  <div class="card-grid">
+
+    <div class="card">
+      <img src="img/sistema-solare.png" alt="Sistema Solare" class="img" />
+      <h3>Il Sistema Solare</h3>
+      <p>Il Sistema Solare è formato dal Sole e da otto pianeti che gli girano intorno. Il Sole è una stella molto grande e calda che fornisce luce e calore. I pianeti principali sono Mercurio, Venere, Terra, Marte, Giove, Saturno, Urano e Nettuno. Ogni pianeta ha caratteristiche diverse e segue un’orbita precisa.</p>
+    </div>
+
+    <div class="card">
+      <img src="img/la-terra.png" alt="La Terra" class="img" />
+      <h3>La Terra</h3>
+      <p>La Terra è il pianeta su cui viviamo ed è speciale perché ospita la vita. È ricoperta in gran parte da acqua e ha un’atmosfera che ci protegge. La Terra ruota su se stessa causando il giorno e la notte, e gira intorno al Sole causando le stagioni.</p>
+    </div>
+
+    <div class="card">
+      <img src="img/la-luna.png" alt="La Luna" class="img" />
+      <h3>La Luna</h3>
+      <p>La Luna è il satellite naturale della Terra. Non ha luce propria ma riflette quella del Sole. Durante il mese cambia forma apparente: sono le fasi lunari. La Luna influenza le maree dei mari e degli oceani.</p>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>Energia e forza</h2>
+  <p>L’energia è ciò che permette a tutto di funzionare: muoverci, illuminare, scaldare e produrre suoni. Le forze invece servono per spingere, tirare e cambiare il movimento degli oggetti.</p>
+  <div class="card-grid">
+
+    <div class="card">
+      <img src="img/forme-di-energia.png" alt="Forme di energia" class="img" />
+      <h3>Le forme di energia</h3>
+      <p>L’energia può presentarsi in molte forme. L’energia luminosa ci permette di vedere, quella termica produce calore, l’energia elettrica fa funzionare gli oggetti e l’energia sonora produce i suoni. L’energia può trasformarsi da una forma all’altra.</p>
+    </div>
+
+    <div class="card">
+      <img src="img/elettricita.png" alt="Elettricità" class="img" />
+      <h3>L’elettricità</h3>
+      <p>L’elettricità è una forma di energia molto importante. Serve per accendere le luci e far funzionare molti apparecchi. Deve essere usata con attenzione perché può essere pericolosa. Per questo è importante seguire le regole di sicurezza.</p>
+    </div>
+
+    <div class="card">
+      <img src="img/le-forze.png" alt="Le forze" class="img" />
+      <h3>Le forze</h3>
+      <p>Una forza è una spinta o una trazione. Le forze possono far muovere un oggetto, fermarlo o cambiarne la direzione. La forza di gravità è quella che attira gli oggetti verso la Terra e ci permette di restare con i piedi a terra.</p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>© Scuola Viva – Scienze | Progetto educativo per la scuola primaria</p>
+</footer>
+
+</body>
+</html>
